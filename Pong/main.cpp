@@ -1,6 +1,6 @@
 //
 //  main.cpp
-//  LeapPong
+//  LeapMotion
 //
 //  Created by Carlos González on 10/01/14.
 //  El codigo de el juego sin ninguna modificacion lo encontrareis
@@ -313,7 +313,7 @@ void SampleListener::onFrame(const Controller& controller) {
     const FingerList fingers1 = hand1.fingers();
     const FingerList fingers2 = hand2.fingers();
     
-    //Siempre se necesitaran la mano abierta para mover las barras
+    //Siempre se necesitaran dos dedos para mover las barras
     if(fingers1.count() == 5){
         int npos1 = fingers1[0].tipPosition()[1];
         int j1 = fingers1[0].tipPosition()[0];
